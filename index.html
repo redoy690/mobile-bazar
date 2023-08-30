@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-blue-100 container mx-auto ">
+        <h3 class="text-center my-10 text-5xl font-bold py-2 text-pink-500   ">Mobile Bazzar</h3>
+    </header>
+    <main class="container mx-auto mt-8">
+        <section class="mb-4 flex-wrap flex justify-between">  
+            <div class="mt-2">
+                <button onclick="oppo()" class="btn btn-accent mt-2 w-28 text-white text-base hover:bg-white hover:text-green-400">OPPO</button>
+                <button onclick="samsung()" class="btn btn-accent mt-2 w-28 text-white text-base hover:bg-white hover:text-green-400">SAMSUNG</button>
+                <button onclick="iphone()"  class="btn btn-accent mt-2 w-28 text-white text-base hover:bg-white hover:text-green-400">IPHONE</button>
+                <button onclick="huawei()" class="btn btn-accent mt-2 w-28 text-white text-base hover:bg-white hover:text-green-400">HUAWEI</button>
+            </div>
+            <div class="mt-2 flex">
+                <input id="search-input" type="text" placeholder="search ..." class="input input-bordered w-full max-w-xs" />
+                <button onclick="handleSearch()" class="btn btn-accent text-white ml-2">Search</button>
+            </div>
+        </section>
+        
+        <section>
+            <div id="loading-spiner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+            </div>
+            <div class="text-center my-10 hidden" id="show-all-container">
+                <button  class="btn btn-accent text-white ml-2 ">Show ALL</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="phone.js"></script>
+</body>
+</html>
